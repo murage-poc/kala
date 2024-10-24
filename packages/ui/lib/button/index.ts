@@ -1,3 +1,3 @@
 export function label() {
-    return 'Something random here';
+    return 'This is something random here';
 }
