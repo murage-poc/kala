@@ -2,7 +2,13 @@ module.exports = {
     plugins: {
         "@release-it/conventional-changelog": {
             preset: "angular",
-            infile: "CHANGELOG.md"
+            infile: "CHANGELOG.md",
+            gitRawCommitsOpts: {
+                path: '.'
+            },
+            commitsOpts: {
+                path: '.'
+            },
         }
     },
     git: {
