@@ -1,0 +1,11 @@
+{
+  "name": "quote-oasis",
+  "version": "1.0.0",
+  "description": "Dive into world of random quotes",
+  "scripts": {
+    "preinstall": "python3 -m venv venv",
+    "install": "source venv/bin/activate && pip install -r requirements.txt",
+    "dev": "source venv/bin/activate && python app.py"
+  },
+  "license": "MIT"
+}
