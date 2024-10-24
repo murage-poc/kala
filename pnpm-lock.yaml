@@ -23,6 +23,9 @@ importers:
       '@kala/release-it-config':
         specifier: workspace:*
         version: link:../../packages/release-it-config
+      '@kala/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       typescript:
         specifier: ~5.6.2
         version: 5.6.3
@@ -37,6 +40,12 @@ importers:
         version: link:../../packages/release-it-config
 
   packages/release-it-config: {}
+
+  packages/ui:
+    devDependencies:
+      '@kala/release-it-config':
+        specifier: workspace:*
+        version: link:../release-it-config
 
 packages:
 

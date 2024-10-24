@@ -1,5 +1,7 @@
 import './style.css'
-// src/main.ts
+import { label } from '@kala/ui/button';
+
+console.log(label())
 
 let count: number = 0;
 
