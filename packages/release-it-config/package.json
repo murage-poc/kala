@@ -1,0 +1,11 @@
+{
+  "name": "@kala/release-it-config",
+  "version": "1.0.0",
+  "description": "Shared configuration for release-it package",
+  "private": true,
+  "main": ".release-it.cjs",
+  "scripts": {
+    "release": "release-it --ci"
+  },
+  "license": "MIT"
+}
