@@ -1,0 +1,41 @@
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  semantic_release:
+    runs-on:
+      - ubuntu-latest
+
+    steps:
+      - name: Set up git
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config --global user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
+          git config --global user.name "${GITHUB_ACTOR}"
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: false
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: 'package.json'
+          cache: 'pnpm'
+
+      - name: Install dependencies # Install only the dependencies required for the release which are at root.
+        run: pnpm install --workspace-root  --prod=false
+
+      - name: Run automated version
+        run: pnpm run release
+        env:
+          RELEASE_SCM_BASE: ${{github.event.before}} # the base is commit before merge
