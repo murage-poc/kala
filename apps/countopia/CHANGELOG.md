@@ -1,5 +1,12 @@
 
 
+# 1.2.0 (2024-10-24)
+
+
+### Features
+
+* add a notice (to vary the release) ([032fc7a](https://github.com/murage-poc/kala/commit/032fc7a60fbbf3efe4a89e0850f1e0ac622e49d1))
+
 # 1.1.0 (2024-10-24)
 
 
