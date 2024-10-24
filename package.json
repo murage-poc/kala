@@ -5,7 +5,7 @@
   "type": "module",
   "description": "People will come for miles to see you burn",
   "scripts": {
-    "release": "pnpm -r run release"
+    "release": "pnpm --recursive --workspace-concurrency 1 release"
   },
   "keywords": [],
   "license": "MIT",
