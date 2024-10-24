@@ -1,16 +1,16 @@
 {
   "name": "@kala/ui",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "type": "module",
   "scripts": {
     "release": "release-it --ci"
   },
   "exports": {
-      "./button": {
-        "default": "./lib/button/index.ts",
-        "types": "./lib/button/index.ts"
-      }
+    "./button": {
+      "default": "./lib/button/index.ts",
+      "types": "./lib/button/index.ts"
+    }
   },
   "devDependencies": {
     "@kala/release-it-config": "workspace:*"
