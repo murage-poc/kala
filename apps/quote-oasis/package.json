@@ -6,7 +6,8 @@
   "scripts": {
     "preinstall": "python3 -m venv venv",
     "install": "source venv/bin/activate && pip install -r requirements.txt",
-    "dev": "source venv/bin/activate && python app.py"
+    "dev": "source venv/bin/activate && python app.py",
+    "release": "release-it --ci"
   },
   "license": "MIT",
   "devDependencies": {
