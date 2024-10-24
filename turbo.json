@@ -1,0 +1,10 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "release": {
+      "dependsOn": ["^release"],
+      "cache": false,
+      "env": ["RELEASE_SCM_BASE"]
+    }
+  }
+}
