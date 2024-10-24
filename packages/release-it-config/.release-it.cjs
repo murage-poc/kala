@@ -1,4 +1,4 @@
-const customWhatBump = require('./bumper');
+const customWhatBump = require('./bumper.cjs');
 
 module.exports = {
     plugins: {
