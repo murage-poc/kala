@@ -2,6 +2,7 @@
   "name": "quote-oasis",
   "version": "1.0.0",
   "description": "Dive into world of random quotes",
+  "type": "module",
   "scripts": {
     "preinstall": "python3 -m venv venv",
     "install": "source venv/bin/activate && pip install -r requirements.txt",
