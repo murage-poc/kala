@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@kala/release-it-config": "workspace:*",
     "typescript": "~5.6.2",
     "vite": "^5.4.9"
   }
