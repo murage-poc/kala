@@ -4,10 +4,12 @@ module.exports = {
             preset: "angular",
             infile: "CHANGELOG.md",
             gitRawCommitsOpts: {
-                path: '.'
+                path: '.',
+                from: process.env.RELEASE_SCM_BASE,
             },
             commitsOpts: {
-                path: '.'
+                path: '.',
+                from: process.env.RELEASE_SCM_BASE,
             },
         }
     },
